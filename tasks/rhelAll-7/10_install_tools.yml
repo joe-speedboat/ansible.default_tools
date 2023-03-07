@@ -1,0 +1,5 @@
+---
+- name: install default tools
+  yum:
+    name: "{{ default_tools_rhel }}"
+    state: present
