@@ -1,0 +1,6 @@
+---
+- name: install default tools
+  apt:
+    name: "{{ default_tools_ubuntu }}"
+    state: present
+

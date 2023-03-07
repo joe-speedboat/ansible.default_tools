@@ -1,0 +1,17 @@
+# defaults/main.yml
+---
+
+default_tools_rhel:
+  - lsof
+  - wget
+  - curl
+  - rsync
+  - setroubleshoot
+
+default_tools_ubuntu:
+  - lsof
+  - wget
+  - curl
+  - rsync
+
+...
