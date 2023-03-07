@@ -12,7 +12,8 @@
   when: >
     ansible_distribution == "AlmaLinux" or
     ansible_distribution == "Rocky" or
-    ansible_distribution == "RedHat"
+    ansible_distribution == "RedHat" or
+    ansible_distribution == "CentOS"
 
 - name: fix ansible_python_interpreter, for Rocky and AlmaLinux, see lib/ansible/config/base.yml
   block:
@@ -96,4 +97,4 @@
   with_items:
     - "{{ include_file_names }}"
 ######## END: Execution part ########
-...
+
